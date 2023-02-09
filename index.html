@@ -1,0 +1,116 @@
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <script src="SituacionEstado.js" type="text/javascript"></script>
+    <link href="Site.css" rel="stylesheet" />
+
+    <header>
+        <br />
+        <h1 class="text-longshadow">
+            Estado de Situación Financiera
+        </h1>
+        <h3>
+            Al 31 de Diciembre de 2022
+        </h3>
+
+    </header>
+
+
+    <body>
+        <div class="contenido">
+            <table class="ActivosPasivos">
+                <tr>
+                    <td>
+                        Activo
+                    </td>
+                    <td>
+                        Pasivo
+                    </td>
+                </tr>
+                <tr>
+                    <hr>
+                    <td>
+                        <div class="titulo_boton">
+                            <a style='cursor: pointer;' onClick="muestra_ActCir('contenidoAC')"
+                                class="boton_mostrar">Activo
+                                Circulante</a>
+                        </div>
+                        <hr>
+                        <div id="contenidoAC">
+                            <div id="cerrarac"><a href="javascript:cerrarac()">❌</a></div>
+                            <img src="actCirculante.jpg">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="titulo_boton">
+                            <a style='cursor: pointer;' onClick="muestra_PasCir('contenidoPC')"
+                                class="boton_mostrar">Pasivo
+                                Circulante</a>
+                        </div>
+                        <hr>
+                        <div id="contenidoPC">
+                            <div id="cerrarpc"><a href="javascript:cerrarpc()">❌</a></div>
+                            <img src="pasivoCirculante.jpg">
+                        </div>
+                    </td>
+                </tr>
+                <td>
+                    <div class="titulo_boton">
+                        <a style='cursor: pointer;' onClick="muestra_ActNoCir('contenidoANC')"
+                            class="boton_mostrar">Activo
+                            No
+                            Circulante</a>
+                    </div>
+                    <hr>
+                    <div id="contenidoANC">
+                        <div id="cerraranc"><a href="javascript:cerraranc()">❌</a></div>
+                        <img src="actNoCirculante.jpg">
+                    </div>
+                </td>
+                <td>
+                    <div class="titulo_boton">
+                        <a style='cursor: pointer;' onClick="muestra_PasNoCir('contenidoPNC')"
+                            class="boton_mostrar">Pasivo
+                            No
+                            Circulante</a>
+                    </div>
+                    <hr>
+                    <div id="contenidoPNC">
+                        <div id="cerrarpnc"><a href="javascript:cerrarpnc()">❌</a></div>
+                        <img src="pasNoCirculante.jpg">
+                    </div>
+                </td>
+                <tr>
+                    <td>
+                        <div class="titulo_boton">
+                            <a style='cursor: pointer;' onClick="muestra_oActNoCir('contenidoOANC')"
+                                class="boton_mostrar">Otros Act. no
+                                Cir.</a>
+                        </div>
+                        <hr>
+                        <div id="contenidoOANC">
+                            <div id="cerraroanc"><a href="javascript:cerraroanc()">❌</a></div>
+                            <img src="oActivosNoCirculantes.jpg">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="titulo_boton">
+                            <a style='cursor: pointer;' onClick="muestra_P('contenidoP')"
+                                class="boton_mostrar">Patrimonio</a>
+                        </div>
+                        <hr>
+                        <div id="contenidoP">
+                            <div id="cerrarp"><a href="javascript:cerrarp()">❌</a></div>
+                            <img src="patrimonio.jpg">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <footer>
+        <p>&copy; - Residencial Encanto</p>
+    </footer>
+</asp:Content>
